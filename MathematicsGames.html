@@ -1,0 +1,45 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Drop</title>
+    <link rel="stylesheet" href="math.css">
+    <script src="Games.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MATHEMATICS GAMES!</h1>
+    </header>
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="box1">10/5=?</div>
+        <div class="box" draggable="true" id="box2">5x5=?</div>
+        <div class="box" draggable="true" id="box3">4²=?</div>
+        <div class="box" draggable="true" id="box4">4x9=?</div>
+        <div class="box" draggable="true" id="box5">100-70=?</div>
+       <div class="box" draggable="true" id="box6">50²=?</div>
+        <div class="box" draggable="true" id="box7">500-180=?</div>
+        <div class="box" draggable="true" id="box8">20x5=?</div>
+        <div class="box" draggable="true" id="box9">70/10=?</div>
+        <div class="box" draggable="true" id="box10">20⁵=?</div>
+
+    </div>
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box10">400</div>
+        <div class="droppable" data-draggable-id="box1">2</div>
+        <div class="droppable" data-draggable-id="box9">7</div>
+        <div class="droppable" data-draggable-id="box2">25</div>
+        <div class="droppable" data-draggable-id="box3">16</div>
+        <div class="droppable" data-draggable-id="box8">100</div>
+        <div class="droppable" data-draggable-id="box4">36</div>
+        <div class="droppable" data-draggable-id="box7">320</div>
+        <div class="droppable" data-draggable-id="box6">2500</div>
+        <div class="droppable" data-draggable-id="box5">30</div>
+
+        <div class="board">Remarks:<p id="remarks"></p>
+        Total of Your Correct Answer:<p id="scores"></p>
+        </div>
+    </div><br>
+    <button class="reset" onclick="reset (event)">Retry</button>
+</body>
+</html>
